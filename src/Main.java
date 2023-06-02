@@ -1,29 +1,25 @@
-import stack.ArrayStack;
+import ArrayQueue.ArrayQueue;
 
 public class Main {
     public static void main(String[] args) {
-        ArrayStack stack = new ArrayStack(3);
-        stack.push(3);
-        stack.push(6);
-        stack.push(9);
 
-        System.out.println(stack);
+        ArrayQueue queue = new ArrayQueue(4);
 
-        System.out.println(stack.pop());
-        System.out.println(stack.pop());
-        System.out.println(stack.pop());
+        queue.push(3);
+        queue.push(4);
+        queue.push(5);
+        System.out.println(queue);
 
-        System.out.println(stack);
+        queue.push(7);
+        System.out.println(queue);
 
-        stack.push(11);
-        stack.push(12);
-        stack.push(13);
-        System.out.println(stack);
-        stack.peek();
-        System.out.println(stack);
+        queue.pop();
+        queue.pop();
+        System.out.println(queue);
 
-
-
+        queue.push(8);
+        queue.push(9);
+        System.out.println(queue);
 
     }
 }

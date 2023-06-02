@@ -1,4 +1,4 @@
-package stack;
+package ArrayStack;
 
 import java.util.Arrays;
 
